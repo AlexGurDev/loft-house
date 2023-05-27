@@ -1,0 +1,36 @@
+.hero {
+  padding: 20.2rem 0;
+  background: url("../img/hero/hero-bg.png");
+  min-height: 85rem;
+
+  &__title {
+    margin-bottom: 8rem;
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 5.8rem;
+    text-transform: uppercase;
+    color: $textColorBlack;
+  }
+
+  &__content {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: #000000;
+
+    &-subtitle {
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    &-list {
+      margin-bottom: 8rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      &-item {
+        font-weight: 400;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.main-navigation {
+  &__list {
+    display: flex;
+    gap: 6rem;
+
+    &-item {
+      &-link {
+        font-weight: 600;
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+        text-transform: uppercase;
+        color: $textColorLink;
+        transition: color 0.2s ease-out;
+
+        &--active {
+          color: $textColorAccentActiveLink;
+        }
+
+        &:hover {
+          color: $textColorAccentActiveLink;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

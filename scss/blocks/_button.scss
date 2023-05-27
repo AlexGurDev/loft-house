@@ -1,0 +1,24 @@
+.button {
+  padding: 1.5rem 1rem;
+  border: 1px solid $backgroundBorderButton;
+  border-radius: 4px;
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $textColorButtonSecondary;
+  background-color: $white;
+  min-width: 18.3rem;
+  min-height: 4.3rem;
+  transition: background-color 0.2s ease-in;
+
+  &--accent {
+    color: $textColorButton;
+    background-color: $backgraundButtonSecondary;
+    border: 1px solid #ffffff;
+    transition: background-color 0.2s ease-in;
+  }
+
+  &:hover {
+    background-color: saturate($textColorAccent, 50%);
+  }
+}

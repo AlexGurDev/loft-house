@@ -1,19 +1,27 @@
 // text colors:
-$textColorMain: #000000;
-$textColorAccent: #9900ff;
+$textColorMain: #ffffff;
+$textColorBlack: #000000;
+$textColorAccent: #3e9cdc;
+$textColorAccentLogo: #42a9ed;
+$textColorLink: #fff;
+$textColorAccentActiveLink: #43abf0;
 $textColorDescription: #737373;
 $textColorButton: #ffffff;
-$textColorGray: #333333;
-$textNavLink: #bfbfbf;
-$textFooterTitle: #a6a6a6;
-$textFooterCopyRight: #7d7d7d;
-$textColorTargetLink: #ffd621;
+$textColorButtonSecondary: #2a2b30;
+$textColorLightGray: #bbbbbb;
+$textFooter: #c3c3c3;
+$textPlaceholder: #272733;
 
 // background colors:
 $white: #ffffff;
 $dark: #000000;
 $gray: #fff5ea;
-$pink: #df5eff;
+
+$backgroundHeader: rgba(16, 16, 29, 0.9);
+$backgraundButtonSecondary: #3e9cdc;
+$backgraundInput: rgba(255, 255, 255, 0.85);
+$backgroundBorderButton: #6f6d7b;
+$backgroundDark: #272733;
 
 // durations:
 $durationFast: 120ms;
@@ -21,9 +29,8 @@ $durationNormal: 240ms;
 $durationSlow: 480ms;
 
 // fonts
-$font-main: "Raleway", sans-serif;
-$font-accent: "Playfair Display", serif;
-$font-secodary: "Roboto", sans-serif;
+$font-main: "Lato", sans-serif;
+$font-accent: "Raleway", serif;
 
 //colors
 $dark: #242b33;
@@ -31,4 +38,3 @@ $accent: #d4c17f;
 $white: #fff;
 $footer-bg: #2d343c;
 $placeholder: #bebebe;
-$muted: #e7e7e7;
