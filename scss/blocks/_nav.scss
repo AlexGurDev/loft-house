@@ -1,0 +1,19 @@
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__list-item-link {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    color: $white;
+    transition: color 0.2s ease-out;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.2;
+    }
+  }
+}

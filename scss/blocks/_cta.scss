@@ -1,0 +1,52 @@
+.cta {
+  padding: 180px 0;
+  background: linear-gradient(
+      180deg,
+      $dark 10.42%,
+      rgba(36, 43, 51, 0) 50.52%,
+      $dark 90.1%
+    ),
+    linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)),
+    url("./../img/cta/cta-bg.jpg"), #c4c4c4;
+
+  @include tabletLarge {
+    padding: 60px 0;
+  }
+
+  &__title {
+    margin-bottom: 17px;
+    font-family: $font-accent;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: $accent;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+    @include tabletLarge {
+      grid-template-columns: 1fr;
+    }
+
+    &-text {
+      line-height: 24px;
+
+      @include tabletLarge {
+        font-size: 14px;
+      }
+    }
+
+    &-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 35px 30px;
+
+      @include tabletLarge {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}

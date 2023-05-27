@@ -1,0 +1,83 @@
+@mixin fs($fs, $lh) {
+  font-size: $fs;
+  line-height: $lh;
+}
+
+@mixin subtitle {
+}
+
+@mixin decorNumber {
+  position: absolute;
+  top: 0;
+  font-weight: 700;
+  font-size: 400px;
+  line-height: 1;
+  opacity: 0.02;
+  font-family: $font-accent;
+}
+
+@mixin desktopHuge {
+  @media screen and ($desktopHuge) {
+    @content;
+  }
+}
+
+@mixin desktopLarge {
+  @media screen and ($desktopLarge) {
+    @content;
+  }
+}
+
+@mixin desktopMedium {
+  @media screen and ($desktopMedium) {
+    @content;
+  }
+}
+
+@mixin desktopSmall {
+  @media screen and ($desktopSmall) {
+    @content;
+  }
+}
+
+@mixin tabletLarge {
+  @media screen and ($tabletLarge) {
+    @content;
+  }
+}
+
+@mixin tabletMedium {
+  @media screen and ($tabletMedium) {
+    @content;
+  }
+}
+
+@mixin tabletSmall {
+  @media screen and ($tabletSmall) {
+    @content;
+  }
+}
+
+@mixin mobileHuge {
+  @media screen and ($mobileHuge) {
+    @content;
+  }
+}
+
+@mixin mobileLarge {
+  @media screen and ($mobileLarge) {
+    @content;
+  }
+}
+
+@mixin mobileMedium {
+  @media screen and ($mobileMedium) {
+    @content;
+  }
+}
+
+@mixin mobileSmall {
+  @media screen and ($mobileSmall) {
+    @content;
+  }
+}

@@ -1,0 +1,33 @@
+.feedback {
+  padding-bottom: 180px;
+
+  @include tabletLarge {
+    padding-bottom: 90px;
+  }
+
+  &__title {
+    margin-bottom: 38px;
+    font-family: $font-accent;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: $accent;
+
+    @include tabletLarge {
+      margin-bottom: 19px;
+      font-size: 28px;
+    }
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 30px;
+
+    @include tabletLarge {
+      margin-bottom: 19px;
+      grid-template-columns: 1fr;
+    }
+  }
+}
