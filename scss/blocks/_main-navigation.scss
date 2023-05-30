@@ -1,4 +1,14 @@
 .main-navigation {
+  @include tabletLarge {
+    display: none;
+  }
+
+  &__nav-btn {
+    display: none;
+    @include tabletLarge {
+      display: block;
+    }
+  }
   &__list {
     display: flex;
     gap: 6rem;

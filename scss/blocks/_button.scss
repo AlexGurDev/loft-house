@@ -1,5 +1,5 @@
 .button {
-  padding: 1.5rem 1rem;
+  padding: 1.2rem 1rem;
   border: 1px solid $backgroundBorderButton;
   border-radius: 4px;
   font-size: 13px;
@@ -19,6 +19,18 @@
   }
 
   &:hover {
-    background-color: saturate($textColorAccent, 50%);
+    background-color: saturate($backgraundButtonSecondary, 20%);
   }
+}
+
+.dots {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 830px;
+  height: 6px;
+  background: url("../img/order/dot.png");
+  background-repeat: repeat-x;
+  background-size: contain;
+  // z-index: -1;
 }

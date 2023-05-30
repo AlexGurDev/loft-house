@@ -6,20 +6,17 @@ html {
 body {
   font-family: $font-main, Arial, Helvetica, sans-serif;
   background-color: $white;
+  background-color: red;
   color: $white;
   font-size: 1.3rem;
-  line-height: 1.7rem;
-  font-weight: 800;
+  line-height: 1.6rem;
+  font-weight: 400;
 }
 
 .container {
   margin: 0 auto;
   padding: 0 15px;
   max-width: 1202px;
-}
-
-.accent-title {
-  color: $textColorAccent;
 }
 
 .text-right {
@@ -44,8 +41,4 @@ body {
 
 .none {
   display: none;
-}
-
-.no-scroll {
-  overflow-y: hidden;
 }

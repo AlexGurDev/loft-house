@@ -35,6 +35,11 @@
 						</li>
 					</ul>
 				</nav>
+				<div class="header__nav-btn">
+					<button class="nav-icon-btn">
+						<div class="nav-icon"></div>
+					</button>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -44,20 +49,20 @@
 				<div class="hero__inner-wrapper">
 					<h1 class="hero__title">
 						<span class="accent-title">Lorem ipsum</span>
-						dolor sit<br> amet consectetur
+						dolor sit<br> ametconsectetur
 						<span class="accent-title">adipiscing</span>
 					</h1>
 					<div class="hero__content">
 						<h3 class="hero__content-subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus!</h3>
 						<ul class="hero__content-list">
 							<li class="hero__content-list-item">
-								- Totam rem aperiam eaque ipsa
+								Totam rem aperiam eaque ipsa
 							</li>
 							<li class="hero__content-list-item">
-								- Sit voluptatem accusantium doloremque laudantium
+								Sit voluptatem accusantium doloremque laudantium
 							</li>
 							<li class="hero__content-list-item">
-								- Sed ut perspiciatis, unde omnis iste natus error
+								Sed ut perspiciatis, unde omnis iste natus error
 							</li>
 						</ul>
 						<div class="hero__dialogs">
@@ -70,26 +75,127 @@
 		</section>
 		<section class="order">
 			<div class="container">
-				<h2 class="order__title">
-					Оформление <span class="accent-title">Заказа</span>
-				</h2>
-				<p class="order__text">
-					Перед заполнением формы ознакомьтесь с нашей схемой работы!
-				</p>
+				<div class="order__content">
+					<h2 class="order__content-title">
+						Оформление <span class="order__content-title--accent">Заказа</span>
+					</h2>
+					<p class="order__content-desciption">
+						Перед заполнением формы ознакомьтесь с нашей схемой работы!
+					</p>
+				</div>
 				<ul class="order__row">
+					<div class="dots"></div>
 					<li class="order__row-item">
 						<div class="order__row-item-ellipse">
-							<img src="./img/order/Frame 5-1.svg" alt="">
+							<img src="./img/order/search.svg" alt="search">
 						</div>
 						<p class="order__row-item-description">Lorem ipsum dolor
 							sit amet</p>
 					</li>
+					<li class="order__row-item">
+						<div class="order__row-item-ellipse">
+							<img src="./img/order/percent.svg" alt="percent">
+						</div>
+						<p class="order__row-item-description">
+							Сonsecteturadipiscing elit
+						</p>
+					</li>
+					<li class="order__row-item">
+						<div class="order__row-item-ellipse">
+							<img src="./img/order/document.svg" alt="document">
+						</div>
+						<p class="order__row-item-description">
+							Sed do eiusmod tempor
+						</p>
+					</li>
+					<li class="order__row-item">
+						<div class="order__row-item-ellipse">
+							<img src="./img/order/letter.svg" alt="letter">
+						</div>
+						<p class="order__row-item-description">
+							Esse cillum dolore eu fugiat
+						</p>
+					</li>
+					<li class="order__row-item">
+						<div class="order__row-item-ellipse">
+							<img src="./img/order/money.svg" alt="money">
+						</div>
+						<p class="order__row-item-description">
+							Excepteur sint occaecat cupidatat non proident
+						</p>
+					</li>
 				</ul>
+				<form class="form">
+					<div class="select-box">
+						<div class="select-box__selected">
+							<span>Выберите тип системы</span>
+						</div>
+						<div class="select-box__list">
+							<div class="select-box__item select-box__item--accent">Sed ut perspiciatis</div>
+							<div class="select-box__item">Nemo enim ipsam</div>
+							<div class="select-box__item">Et harum quidem</div>
+							<div class="select-box__item">Temporibus autem</div>
+							<div class="select-box__item">Itaque earum rerum</div>
+							<div class="select-box__item">Nemo enim ipsam</div>
+						</div>
+					</div>
+					<input class="form__input" type="email" placeholder="Ваш e-mail">
+					<input class="form__input" type="text" placeholder="Ваше имя" autocomplete="off">
+					<div class="range-slider">
+						<label class="range-slider__label" for="range">
+							Sed ut perspiciatis, unde omnis iste natus
+						</label>
+						<input type="range" class="range-slider__input" id="range" class="range" min="0" max="100">
+						<div class="range-slider__output">
+							<span class="range-slider__output-number"></span><span class="range-slider__output-percent">%</span>
+						</div>
+					</div>
+					<label for="file-input" class="form__file form__file-text">
+						<input class="form__file-input" type="file" id="file-input">
+						<img class="form__file-icon" src="../img/order/file.svg" alt="file">
+						<span>Прикрепить файл</span>
+					</label>
+					<button class="form__submit-button button button--accent" type="submit">Отправить</button>
+				</form>
 			</div>
+
 		</section>
 	</main>
 	<footer class="footer">
-		FOOTER
+		<div class="container">
+			<div class="footer__row">
+				<p class="footer__rights">
+					© 2018 «LoremIpsum.net» Все права защищены.
+				</p>
+				<div class="footer__payments">
+					<ul class="footer__payments-list">
+						<li class="footer__payments-list-item footer__payments-list-item--wallet">
+							QIWI wallet
+						</li>
+						<li class="footer__payments-list-item footer__payments-list-item--yandex-money">
+							Yandex Money
+						</li>
+						<li class="footer__payments-list-item footer__payments-list-item--web-money">
+							Web Money
+						</li>
+					</ul>
+				</div>
+				<div class="footer__contacts">
+					<ul class="footer__contacts-list">
+						<li class="footer__contacts-list-item">
+							<a href="#" class="footer__contacts-list-item-link footer__contacts-list-item-link--mail">
+								info@ipsum228.com
+							</a>
+						</li>
+						<li class="footer__contacts-list-item">
+							<a href="#" class="footer__contacts-list-item-link footer__contacts-list-item-link--vk">
+								Мы вконтакте
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</footer>
 	<script src="./js/main.js"></script>
 </body>
