@@ -136,9 +136,9 @@ html {
 
 body {
   font-family: "Lato", sans-serif, Arial, Helvetica, sans-serif;
-  background-color: #fff;
+  background-color: #ffffff;
   background-color: red;
-  color: #fff;
+  color: #ffffff;
   font-size: 1.3rem;
   line-height: 1.6rem;
   font-weight: 400;
@@ -253,7 +253,7 @@ body {
   position: relative;
   width: 4rem;
   height: 0.1rem;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 @media screen and (max-width: 560px) {
   .nav-icon {
@@ -269,7 +269,7 @@ body {
   left: 0;
   width: 4rem;
   height: 0.1rem;
-  background-color: #fff;
+  background-color: #ffffff;
   transition: transform 0.1s ease-in, top 0.1s linear 0.1s;
 }
 @media screen and (max-width: 560px) {
@@ -306,7 +306,7 @@ body {
 }
 
 .logo__link {
-  color: #fff;
+  color: #ffffff;
 }
 .logo__text {
   font-family: "Raleway", serif;
@@ -404,7 +404,7 @@ body {
 .hero__content {
   font-size: 2rem;
   line-height: 2.4rem;
-  color: #242b33;
+  color: #000000;
 }
 @media screen and (max-width: 840px) {
   .hero__content {
@@ -462,7 +462,7 @@ body {
   border: 0.1rem solid #6f6d7b;
   border-radius: 0.4rem;
   color: #2a2b30;
-  background-color: #fff;
+  background-color: #ffffff;
   min-width: 18.3rem;
   display: flex;
   align-items: center;
@@ -474,7 +474,7 @@ body {
 .button--accent {
   color: #ffffff;
   background-color: #3e9cdc;
-  border: 0.1rem solid #fff;
+  border: 0.1rem solid #ffffff;
 }
 .button:hover {
   background-color: #27a0f3;
@@ -491,16 +491,16 @@ body {
 
 .order {
   padding: 12.6rem 0 15rem;
-  background: #272733;
   background: url("../../img/order/order-bg.png");
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center 0;
   min-height: 92rem;
 }
 @media screen and (max-width: 840px) {
   .order {
-    padding: 6.6rem 0 15rem;
+    padding: 6.6rem 0;
     min-height: 0;
   }
 }
@@ -679,10 +679,10 @@ body {
 .form__input, .form__file-text {
   padding: 1.6rem 3.5rem 1.2rem 1rem;
   background: rgba(255, 255, 255, 0.85);
-  border: 0.1rem solid #fff;
+  border: 0.1rem solid #ffffff;
   border-radius: 0.3rem;
   height: 4.8rem;
-  color: #fff;
+  color: #ffffff;
   font-size: 1.4rem;
   transition: background-color 0.2s ease-in;
 }
@@ -753,7 +753,7 @@ body {
   font-size: 1.5rem;
   line-height: 1.8rem;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
 }
 @media screen and (max-width: 560px) {
   .form__submit-button {
@@ -799,7 +799,7 @@ body {
   position: relative;
   padding: 1.1rem 3.5rem 1.1rem 1rem;
   background: rgba(255, 255, 255, 0.85);
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   border-radius: 3px;
   font-weight: 400;
   font-size: 1.8rem;
@@ -826,7 +826,7 @@ body {
   border: none;
   font-size: 1.8rem;
   line-height: 2.2rem;
-  color: #fff;
+  color: #ffffff;
 }
 @media screen and (max-width: 420px) {
   .select-box__selected--open {
@@ -839,8 +839,8 @@ body {
   content: "";
   width: 0.8rem;
   height: 0.8rem;
-  border-top: 2px solid #242b33;
-  border-right: 2px solid #242b33;
+  border-top: 2px solid #000000;
+  border-right: 2px solid #000000;
   position: absolute;
   top: 1.7rem;
   right: 1.6rem;
@@ -923,7 +923,7 @@ body {
   padding-right: 4rem;
   font-size: 1.8rem;
   line-height: 2.2rem;
-  color: #fff;
+  color: #ffffff;
   display: inline-block;
 }
 @media screen and (max-width: 1024px) {
@@ -950,7 +950,7 @@ body {
   opacity: 0.7;
   transition: opacity 0.2s;
   background: rgba(255, 255, 255, 0.85);
-  border: 0.1rem solid #fff;
+  border: 0.1rem solid #ffffff;
   height: 0.6rem;
   border-radius: 0.5rem;
 }
@@ -1008,7 +1008,7 @@ body {
 
 .footer {
   margin-top: -8rem;
-  padding: 3.2rem 0;
+  padding: 3rem 0;
   min-height: 8rem;
   background-color: #3d4050;
 }
@@ -1017,53 +1017,118 @@ body {
   grid-template-columns: minmax(20rem, 34rem) minmax(20rem, 67rem) minmax(20rem, 30.9rem);
   gap: 8rem;
 }
+@media screen and (max-width: 1024px) {
+  .footer__row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 560px) {
+  .footer__row {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
 .footer__rights {
   position: relative;
   display: flex;
   align-items: center;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.05rem;
+}
+@media screen and (max-width: 1024px) {
+  .footer__rights {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    grid-row: 3/4;
+    grid-column: 1/3;
+  }
+}
+@media screen and (max-width: 560px) {
+  .footer__rights {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    grid-column: inherit;
+  }
 }
 .footer__rights::after {
   content: "";
   position: absolute;
-  top: -2px;
-  right: -7px;
+  top: -0.2rem;
+  right: -0.7rem;
   width: 0.1rem;
   height: 1.8rem;
   background: #c3c3c3;
+}
+@media screen and (max-width: 1024px) {
+  .footer__rights::after {
+    content: none;
+  }
 }
 .footer__payments {
   position: relative;
 }
+@media screen and (max-width: 1024px) {
+  .footer__payments {
+    padding: 0 3rem;
+  }
+}
 .footer__payments::after {
   content: "";
   position: absolute;
-  top: -2px;
-  right: -39px;
+  top: -0.2rem;
+  right: -3.9rem;
   width: 0.1rem;
   height: 1.8rem;
   background: #c3c3c3;
+}
+@media screen and (max-width: 1024px) {
+  .footer__payments::after {
+    content: none;
+  }
 }
 .footer__payments-list {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 3rem;
+  gap: 4rem;
+}
+@media screen and (max-width: 1024px) {
+  .footer__payments-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 560px) {
+  .footer__payments-list {
+    gap: 1rem;
+  }
 }
 .footer__payments-list-item {
   position: relative;
-  font-size: 13px;
-  line-height: 16px;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
   color: #c3c3c3;
+}
+@media screen and (max-width: 560px) {
+  .footer__payments-list-item {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
 }
 .footer__payments-list-item--wallet::before, .footer__payments-list-item--web-money::before, .footer__payments-list-item--yandex-money::before {
   content: "";
   position: absolute;
-  left: -33px;
-  top: -2px;
-  width: 20px;
-  height: 20px;
+  left: -3.3rem;
+  top: -0.2rem;
+  width: 2rem;
+  height: 2rem;
   background-repeat: no-repeat;
+}
+@media screen and (max-width: 560px) {
+  .footer__payments-list-item--wallet::before, .footer__payments-list-item--web-money::before, .footer__payments-list-item--yandex-money::before {
+    left: -3rem;
+  }
 }
 .footer__payments-list-item--wallet::before {
   background-image: url("../img/footer/wallet.svg");
@@ -1079,14 +1144,23 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 3rem;
+}
+@media screen and (max-width: 1024px) {
+  .footer__contacts-list {
+    padding: 0 3rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
 }
 .footer__contacts-list-item {
   position: relative;
 }
 .footer__contacts-list-item-link {
   font-weight: 400;
-  font-size: 13px;
-  line-height: 16px;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
   color: #ffffff;
   transition: color 0.2s ease-in;
   cursor: pointer;
@@ -1097,10 +1171,10 @@ body {
 .footer__contacts-list-item-link--mail::before, .footer__contacts-list-item-link--vk::before {
   content: "";
   position: absolute;
-  left: -33px;
-  top: -3px;
-  width: 20px;
-  height: 20px;
+  left: -3.3rem;
+  top: -0.3rem;
+  width: 2rem;
+  height: 2rem;
   background-repeat: no-repeat;
 }
 .footer__contacts-list-item-link--mail::before {
