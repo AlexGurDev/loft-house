@@ -22,7 +22,7 @@
         line-height: 1.6rem;
         text-transform: uppercase;
         color: $textColorLink;
-        transition: color 0.2s ease-out;
+        transition: color $durationNormal ease-out;
 
         &--active {
           color: $textColorAccentActiveLink;
