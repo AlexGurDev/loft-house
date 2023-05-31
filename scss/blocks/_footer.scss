@@ -82,7 +82,8 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 4rem;
+      flex-wrap: wrap;
+      gap: 2rem 4rem;
 
       @include desktopMedium {
         flex-direction: column;
@@ -142,7 +143,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 3rem;
+      flex-wrap: wrap;
+      gap: 2rem 4rem;
 
       @include desktopMedium {
         padding: 0 3rem;
