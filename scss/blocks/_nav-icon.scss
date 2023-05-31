@@ -1,48 +1,50 @@
-/* Nav Icon */
 .nav-icon-btn {
-  --time: 0.1s;
-  --width: 40px;
-  --height: 30px;
-  --line-height: 1px;
-  --line-margin: 2;
-  --color: #fff;
-  background: none;
-
-  height: var(--height);
-  width: var(--width);
+  height: 3rem;
+  width: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: transparent;
+
+  @include mobileHuge {
+    height: 2rem;
+    width: 3rem;
+  }
 }
 
 .nav-icon {
   position: relative;
-  width: var(--width);
-  height: var(--line-height);
-  background-color: var(--color);
+  width: 4rem;
+  height: 0.1rem;
+  background-color: $white;
+
+  @include mobileHuge {
+    width: 3rem;
+  }
 }
 
 .nav-icon::before,
 .nav-icon::after {
   content: "";
   display: block;
-
   position: absolute;
   left: 0;
+  width: 4rem;
+  height: 0.1rem;
+  background-color: $white;
+  transition: transform 0.1s ease-in, top 0.1s linear 0.1s;
 
-  width: var(--width);
-  height: var(--line-height);
-
-  background-color: var(--color);
-  transition: transform var(--time) ease-in, top var(--time) linear var(--time);
+  @include mobileHuge {
+    width: 3rem;
+  }
 }
 
 .nav-icon::before {
-  top: calc(var(--line-height) * -8);
+  top: calc(0.1rem * -8);
 }
 
 .nav-icon::after {
-  top: calc(var(--line-height) * 8);
+  top: calc(0.1rem * 8);
 }
 
 .nav-icon.nav-icon--active {
@@ -52,7 +54,7 @@
 .nav-icon.nav-icon--active::before,
 .nav-icon.nav-icon--active::after {
   top: 0;
-  transition: top var(--time) linear, transform var(--time) ease-in var(--time);
+  transition: top 0.1s linear, transform 0.1s ease-in 0.1s;
 }
 
 .nav-icon.nav-icon--active::before {

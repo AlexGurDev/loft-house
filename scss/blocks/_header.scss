@@ -15,14 +15,17 @@
     gap: 2rem;
     min-height: 10rem;
 
+    @include mobileHuge {
+      min-height: inherit;
+    }
+
     &--mobile {
       position: fixed;
-      padding: 40px 0;
+      padding: 4rem 0;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      z-index: 10;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -31,6 +34,11 @@
       -webkit-backdrop-filter: blur(2rem);
       backdrop-filter: blur(2rem);
       background-color: rgba(6, 20, 95, 0.5);
+      z-index: 10;
+
+      @include mobileHuge {
+        padding: 2rem 0;
+      }
 
       .main-navigation {
         display: block;
@@ -39,19 +47,25 @@
       .main-navigation__list {
         flex-direction: column;
         align-items: center;
-        gap: 30px;
+        gap: 3rem;
       }
 
       .header__nav-btn {
         position: fixed;
-        top: 36px;
-        right: 15px;
+        top: 3.6rem;
+        right: 1.5rem;
+
+        @include mobileHuge {
+          top: 2.5rem;
+          right: 1.1rem;
+        }
       }
     }
   }
 
   &__nav-btn {
     display: none;
+
     @include tabletLarge {
       display: block;
     }

@@ -15,8 +15,18 @@ body {
 
 .container {
   margin: 0 auto;
-  padding: 0 15px;
-  max-width: 1202px;
+  padding: 0 1.5rem;
+  max-width: 120.2rem;
+
+  @include mobileHuge {
+    padding: 0 1rem;
+  }
+}
+
+.main {
+  min-height: 100vh;
+  padding-bottom: 8rem;
+  margin-bottom: -8rem;
 }
 
 .text-right {

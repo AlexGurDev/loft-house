@@ -1,4 +1,6 @@
 .logo {
+  flex: 0 0 auto;
+
   &__link {
     color: $white;
   }
@@ -13,6 +15,11 @@
     &--accent {
       margin-left: -0.4rem;
       color: $textColorAccentLogo;
+    }
+
+    @include mobileHuge {
+      font-size: 2.2rem;
+      line-height: 2.8rem;
     }
   }
 }
