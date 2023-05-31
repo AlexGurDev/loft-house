@@ -34,8 +34,8 @@
     background: $lightGray;
     outline: none;
     opacity: 0.7;
-    -webkit-transition: 0.2s;
-    transition: opacity 0.2s;
+    -webkit-transition: $durationNormal;
+    transition: opacity $durationNormal;
     background: $light;
     border: 0.1rem solid $white;
     height: 0.6rem;

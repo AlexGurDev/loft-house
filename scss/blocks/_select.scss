@@ -3,7 +3,7 @@
   min-height: 4.8rem;
   background: rgba(61, 64, 80, 0.85);
   border-radius: 3px 3px 0px 0px;
-  transition: all 0.2s ease-out;
+  transition: all $durationNormal ease-out;
 
   @include mobileMedium {
     width: 28.3rem;
@@ -60,6 +60,10 @@
       right: 1.6rem;
       transform: rotate(135deg);
       transform-origin: center;
+
+      @include mobileMedium {
+        top: 1.3rem;
+      }
     }
   }
 
@@ -102,7 +106,7 @@
     padding: 0.3rem 0;
     font-size: 1.8rem;
     line-height: 3.4rem;
-    transition: color 0.2s ease-out;
+    transition: color $durationNormal ease-out;
 
     @include mobileMedium {
       font-size: 1.2rem;
@@ -124,7 +128,17 @@
   display: block;
 }
 
-.select-box__selected::before .select-box__list .open {
+.select-box__selected--open.select-box__selected::before {
+  top: 1.9rem;
   transform: rotate(-45deg);
-  color: #ffffff;
+  border-top: 2px solid $white;
+  border-right: 2px solid $white;
+
+  @include mobileMedium {
+    top: 1.7rem;
+  }
+}
+
+.active .langItem.active::before {
+  transform: rotate(-45deg);
 }

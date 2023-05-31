@@ -32,7 +32,8 @@
   width: 4rem;
   height: 0.1rem;
   background-color: $white;
-  transition: transform 0.1s ease-in, top 0.1s linear 0.1s;
+  transition: transform $durationFast ease-in,
+    top $durationFast linear $durationFast;
 
   @include mobileHuge {
     width: 3rem;
@@ -54,7 +55,8 @@
 .nav-icon.nav-icon--active::before,
 .nav-icon.nav-icon--active::after {
   top: 0;
-  transition: top 0.1s linear, transform 0.1s ease-in 0.1s;
+  transition: top $durationFast linear,
+    transform $durationFast ease-in $durationFast;
 }
 
 .nav-icon.nav-icon--active::before {

@@ -1,11 +1,3 @@
-@mixin fs($fs, $lh) {
-  font-size: $fs;
-  line-height: $lh;
-}
-
-@mixin subtitle {
-}
-
 @mixin decorNumber {
   position: absolute;
   top: 0;

@@ -155,7 +155,7 @@ body {
   }
 }
 
-.main {
+.styles-container {
   min-height: 100vh;
   padding-bottom: 8rem;
   margin-bottom: -8rem;
@@ -270,7 +270,7 @@ body {
   width: 4rem;
   height: 0.1rem;
   background-color: #ffffff;
-  transition: transform 0.1s ease-in, top 0.1s linear 0.1s;
+  transition: transform 120ms ease-in, top 120ms linear 120ms;
 }
 @media screen and (max-width: 560px) {
   .nav-icon::before,
@@ -294,7 +294,7 @@ body {
 .nav-icon.nav-icon--active::before,
 .nav-icon.nav-icon--active::after {
   top: 0;
-  transition: top 0.1s linear, transform 0.1s ease-in 0.1s;
+  transition: top 120ms linear, transform 120ms ease-in 120ms;
 }
 
 .nav-icon.nav-icon--active::before {
@@ -467,7 +467,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.2s ease-in;
+  transition: background-color 240ms ease-in;
   overflow: hidden;
   text-transform: uppercase;
 }
@@ -684,7 +684,7 @@ body {
   height: 4.8rem;
   color: #ffffff;
   font-size: 1.4rem;
-  transition: background-color 0.2s ease-in;
+  transition: background-color 240ms ease-in;
 }
 @media screen and (max-width: 420px) {
   .form__input, .form__file-text {
@@ -727,7 +727,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.2s ease-in;
+  transition: background-color 240ms ease-in;
   cursor: pointer;
 }
 .form__file-text:hover {
@@ -787,7 +787,7 @@ body {
   min-height: 4.8rem;
   background: rgba(61, 64, 80, 0.85);
   border-radius: 3px 3px 0px 0px;
-  transition: all 0.2s ease-out;
+  transition: all 240ms ease-out;
 }
 @media screen and (max-width: 420px) {
   .select-box {
@@ -847,6 +847,11 @@ body {
   transform: rotate(135deg);
   transform-origin: center;
 }
+@media screen and (max-width: 420px) {
+  .select-box__selected::before {
+    top: 1.3rem;
+  }
+}
 .select-box__list {
   position: absolute;
   width: 37rem;
@@ -884,7 +889,7 @@ body {
   padding: 0.3rem 0;
   font-size: 1.8rem;
   line-height: 3.4rem;
-  transition: color 0.2s ease-out;
+  transition: color 240ms ease-out;
 }
 @media screen and (max-width: 420px) {
   .select-box__item {
@@ -904,9 +909,20 @@ body {
   display: block;
 }
 
-.select-box__selected::before .select-box__list .open {
+.select-box__selected--open.select-box__selected::before {
+  top: 1.9rem;
   transform: rotate(-45deg);
-  color: #ffffff;
+  border-top: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+}
+@media screen and (max-width: 420px) {
+  .select-box__selected--open.select-box__selected::before {
+    top: 1.7rem;
+  }
+}
+
+.active .langItem.active::before {
+  transform: rotate(-45deg);
 }
 
 .range-slider {
@@ -948,7 +964,7 @@ body {
   background: #d3d3d3;
   outline: none;
   opacity: 0.7;
-  transition: opacity 0.2s;
+  transition: opacity 240ms;
   background: rgba(255, 255, 255, 0.85);
   border: 0.1rem solid #ffffff;
   height: 0.6rem;
@@ -1162,7 +1178,7 @@ body {
   font-size: 1.3rem;
   line-height: 1.6rem;
   color: #ffffff;
-  transition: color 0.2s ease-in;
+  transition: color 240ms ease-in;
   cursor: pointer;
 }
 .footer__contacts-list-item-link:hover {
