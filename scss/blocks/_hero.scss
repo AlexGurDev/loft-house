@@ -8,12 +8,11 @@
 
   @include tabletLarge {
     padding: 15.5rem 0 10rem;
-    min-height: inherit;
+    min-height: 0;
   }
 
   @include mobileHuge {
     padding: 10rem 0 2rem;
-    min-height: inherit;
   }
 
   &__title {

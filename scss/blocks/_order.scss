@@ -2,15 +2,25 @@
   padding: 12.6rem 0 15rem;
   background: $backgroundDark;
   background: url("../../img/order/order-bg.png");
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: $shadowOrderSection;
+
   background-repeat: no-repeat;
   background-position: center 0;
   min-height: 92rem;
+
+  @include tabletLarge {
+    padding: 6.6rem 0 15rem;
+    min-height: 0;
+  }
 
   &__content {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include mobileHuge {
+      justify-content: center;
+    }
 
     &-title {
       margin-bottom: 2.7rem;
@@ -18,16 +28,30 @@
       font-size: 3.6rem;
       line-height: 4.3rem;
       text-transform: uppercase;
+      text-align: center;
+
+      @include tabletLarge {
+        font-size: 2.6rem;
+        line-height: 3rem;
+      }
 
       &--accent {
         color: $textColorAccent;
       }
     }
+
     &-desciption {
       margin-bottom: 8rem;
       font-size: 1.8rem;
       line-height: 2.2rem;
       color: $textColorLightGray;
+      text-align: center;
+
+      @include tabletLarge {
+        margin-bottom: 4rem;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+      }
     }
   }
 
@@ -37,10 +61,11 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 3rem;
-    // media
-    // display: grid;
-    // grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-    // gap: 40px 30px;
+    overflow: hidden;
+
+    @include tabletLarge {
+      margin-bottom: 4.6rem;
+    }
 
     &-item {
       position: relative;
@@ -50,16 +75,28 @@
       flex-direction: column;
       align-items: center;
 
+      @include tabletLarge {
+        flex: auto;
+      }
+
       &::after {
         content: "";
         position: absolute;
-        top: 47px;
-        right: -70px;
-        width: 110px;
-        height: 6px;
+        top: 4.7rem;
+        right: -7rem;
+        width: 11rem;
+        height: 0.6rem;
         background: url("../img/order/dot.png");
         background-repeat: repeat-x;
         background-size: contain;
+
+        @include tabletLarge {
+          top: 3.4rem;
+        }
+
+        @include mobileHuge {
+          content: none;
+        }
       }
 
       &:last-child::after {
@@ -69,13 +106,36 @@
       &-ellipse {
         margin-bottom: 2rem;
         border-radius: 50%;
-        width: 100px;
-        height: 100px;
+        width: 10rem;
+        height: 10rem;
         background: $backgroundLightBlue;
-        border: 5px solid $backgroundorderIcon;
+        border: 0.5rem solid $backgroundorderIcon;
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @include tabletLarge {
+          margin-bottom: 1rem;
+          width: 8rem;
+          height: 8rem;
+        }
+
+        @include mobileHuge {
+          width: 6rem;
+          height: 6rem;
+        }
+
+        & > img {
+          @include tabletLarge {
+            width: 4rem;
+            height: 4rem;
+          }
+
+          @include mobileHuge {
+            width: 3rem;
+            height: 3rem;
+          }
+        }
       }
 
       &-description {
@@ -83,6 +143,16 @@
         line-height: 1.9rem;
         text-align: center;
         font-weight: 400;
+
+        @include tabletLarge {
+          font-size: 1.3rem;
+          line-height: 1.6rem;
+        }
+
+        @include mobileHuge {
+          font-size: 1rem;
+          height: 2rem;
+        }
       }
     }
   }
