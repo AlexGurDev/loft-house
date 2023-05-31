@@ -1,36 +1,33 @@
 .button {
   padding: 1.2rem 1rem;
-  border: 1px solid $backgroundBorderButton;
-  border-radius: 4px;
-  font-size: 13px;
-  line-height: 16px;
-  text-transform: uppercase;
+  border: 0.1rem solid $backgroundBorderButton;
+  border-radius: 0.4rem;
   color: $textColorButtonSecondary;
   background-color: $white;
   min-width: 18.3rem;
-  min-height: 4.3rem;
+  // min-height: 4.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: background-color 0.2s ease-in;
+  overflow: hidden;
+  text-transform: uppercase;
 
   &--accent {
     color: $textColorButton;
     background-color: $backgraundButtonSecondary;
-    border: 1px solid #ffffff;
-    transition: background-color 0.2s ease-in;
+    border: 0.1rem solid $white;
   }
 
   &:hover {
     background-color: saturate($backgraundButtonSecondary, 20%);
   }
-}
 
-.dots {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 830px;
-  height: 6px;
-  background: url("../img/order/dot.png");
-  background-repeat: repeat-x;
-  background-size: contain;
-  // z-index: -1;
+  @include mobileHuge {
+    padding: 0.8rem 0.6rem;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    min-width: 12.3rem;
+    min-height: 3.3rem;
+  }
 }
