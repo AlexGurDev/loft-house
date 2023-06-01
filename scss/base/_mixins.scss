@@ -14,6 +14,12 @@
   }
 }
 
+@mixin desktopMidleLarge {
+  @media screen and ($desktopMidleLarge) {
+    @content;
+  }
+}
+
 @mixin desktopLarge {
   @media screen and ($desktopLarge) {
     @content;

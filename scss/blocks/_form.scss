@@ -31,12 +31,16 @@
     border: 0.1rem solid $white;
     border-radius: 0.3rem;
     height: 4.8rem;
-    color: $white;
-    font-size: 1.4rem;
+    color: $dark;
+		font-weight: 600;
+    font-size: 2rem;
+		line-height: 2.2rem;
+		text-overflow: ellipsis;
     transition: background-color $durationNormal ease-in;
 
     @include mobileMedium {
       height: 4rem;
+			font-size: 1.4rem;
     }
 
     &::placeholder {
@@ -52,6 +56,7 @@
 
     &:focus {
       background-color: $backgraundFocusInput;
+			color: $white;
     }
   }
 

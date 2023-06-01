@@ -91,13 +91,17 @@
         background-repeat: repeat-x;
         background-size: contain;
 
-        @include tabletLarge {
-          top: 3.4rem;
-        }
-
-        @include mobileHuge {
+				@include desktopMidleLarge {
           content: none;
         }
+
+        // @include tabletLarge {
+        //   top: 3.4rem;
+        // }
+
+        // @include mobileHuge {
+        //   content: none;
+        // }
       }
 
       &:last-child::after {

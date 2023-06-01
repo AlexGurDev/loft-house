@@ -55,6 +55,7 @@
         position: fixed;
         top: 3.6rem;
         right: 1.5rem;
+				cursor: pointer;
 
         @include mobileHuge {
           top: 2.5rem;

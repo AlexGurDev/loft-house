@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   background: transparent;
+	cursor: pointer;
 
   @include mobileHuge {
     height: 2rem;
