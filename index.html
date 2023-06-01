@@ -5,7 +5,14 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="./css/main.css" />
+	<link rel="apple-touch-icon" sizes="120x120" href="./favicon">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+	<link rel="manifest" href="./favicon/site.webmanifest">
+	<link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" href="./css/main.min.css" />
 	<title>Technical Task</title>
 </head>
 
@@ -138,8 +145,8 @@
 							<div class="select-box__item">Nemo enim ipsam</div>
 						</div>
 					</div>
-					<input class="form__input" type="email" placeholder="Ваш e-mail">
-					<input class="form__input" type="text" placeholder="Ваше имя" autocomplete="off">
+					<input class="form__input" type="email" name="email" placeholder="Ваш e-mail" autocomplete="off" data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$">
+					<input class="form__input" type="text" name="name" placeholder="Ваше имя" data-reg="^[А-ЯЁ][а-яё]*$">
 					<div class="range-slider">
 						<label class="range-slider__label" for="range">
 							Sed ut perspiciatis, unde omnis iste natus
@@ -150,11 +157,11 @@
 						</div>
 					</div>
 					<label for="file-input" class="form__file form__file-text">
-						<input class="form__file-input" type="file" id="file-input">
+						<input class="form__file-input" type="file" id="file-input" name="file">
 						<img class="form__file-icon" src="./img/order/file.svg" alt="file">
 						<span>Прикрепить файл</span>
 					</label>
-					<button class="form__submit-button button button--accent" type="submit">Отправить</button>
+					<input class="form__submit-button button button--accent" type="submit" value="Отправить">
 				</form>
 			</div>
 		</section>
@@ -163,7 +170,7 @@
 		<div class="container">
 			<div class="footer__row">
 				<p class="footer__rights">
-					© 2018 «LoremIpsum.net» Все права защищены.
+					&copy; 2018 «LoremIpsum.net» Все права защищены.
 				</p>
 				<div class="footer__payments">
 					<ul class="footer__payments-list">

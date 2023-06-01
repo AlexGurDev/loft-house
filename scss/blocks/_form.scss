@@ -99,6 +99,7 @@
     line-height: 1.8rem;
     text-transform: uppercase;
     color: $white;
+		cursor: pointer;
 
     @include mobileHuge {
       font-size: 1.2rem;
@@ -115,7 +116,7 @@
   }
 }
 
-.form > button:nth-child(6) {
+.form > input[type="submit"]:nth-child(6) {
   margin-top: 2.3rem;
   grid-column: 2/2;
 
