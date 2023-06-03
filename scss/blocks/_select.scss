@@ -1,8 +1,6 @@
 .select-box {
-  width: 37rem;
+  position: relative;
   min-height: 4.8rem;
-  background: rgba(61, 64, 80, 0.85);
-  border-radius: 3px 3px 0px 0px;
   transition: all $durationNormal ease-out;
 
   @include mobileMedium {
@@ -10,8 +8,26 @@
     min-height: 4rem;
   }
 
+  &::before {
+    content: "";
+    width: 0.8rem;
+    height: 0.8rem;
+    border-top: 2px solid $dark;
+    border-right: 2px solid $dark;
+    position: absolute;
+    top: 1.7rem;
+    right: 1.6rem;
+    transform: rotate(135deg);
+    transform-origin: center;
+    z-index: 100;
+
+    @include mobileMedium {
+      top: 1.3rem;
+    }
+  }
+
   &__selected {
-    position: relative;
+    position: absolute;
     padding: 1.1rem 3.5rem 1.1rem 1rem;
     background: rgba(255, 255, 255, 0.85);
     border: 1px solid $white;
@@ -19,13 +35,18 @@
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 2.2rem;
-    color: $textPlaceholder;
-    width: 37rem;
+    width: 100%;
     min-height: 4.8rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
     cursor: pointer;
+
+    &::placeholder {
+      color: $textPlaceholder;
+    }
 
     @include mobileMedium {
       width: 28.3rem;
@@ -34,42 +55,26 @@
       min-height: 4rem;
     }
 
-    &--open {
-      background: rgba(61, 64, 80, 0.85);
-      border-radius: 3px 3px 0px 0px;
-      border: none;
-      font-size: 1.8rem;
-      line-height: 2.2rem;
-      color: $white;
+    // &--open {
+    //   background: rgba(61, 64, 80, 0.85);
+    //   border-radius: 3px 3px 0px 0px;
+    //   border: none;
+    //   font-size: 1.8rem;
+    //   line-height: 2.2rem;
+    //   color: $white;
 
-      @include mobileMedium {
-        width: 28.3rem;
-        font-size: 1.2rem;
-        line-height: 1.6rem;
-      }
-    }
-
-    &::before {
-      content: "";
-      width: 0.8rem;
-      height: 0.8rem;
-      border-top: 2px solid $dark;
-      border-right: 2px solid $dark;
-      position: absolute;
-      top: 1.7rem;
-      right: 1.6rem;
-      transform: rotate(135deg);
-      transform-origin: center;
-
-      @include mobileMedium {
-        top: 1.3rem;
-      }
-    }
+    //   @include mobileMedium {
+    //     width: 28.3rem;
+    //     font-size: 1.2rem;
+    //     line-height: 1.6rem;
+    //   }
+    // }
   }
 
   &__list {
     position: absolute;
-    width: 37rem;
+    top: 48px;
+    width: 100%;
     display: none;
     padding: 1rem;
     background: rgba(39, 39, 51, 0.9);
@@ -79,7 +84,7 @@
     overflow-y: auto;
     scrollbar-color: #6969dd #e0e0e0;
     scrollbar-width: thin;
-    transition: all 2s ease-out;
+    transition: all $durationNormal ease-out;
     z-index: 100;
 
     @include mobileMedium {
@@ -122,6 +127,8 @@
     font-size: 1.8rem;
     line-height: 3.4rem;
     transition: color $durationNormal ease-out;
+    overflow: hidden;
+    text-overflow: ellipsis;
 
     @include mobileMedium {
       font-size: 1.2rem;
@@ -139,11 +146,11 @@
   }
 }
 
-.open {
+.select-box.active .select-box__list {
   display: block;
 }
 
-.select-box__selected--open.select-box__selected::before {
+.select-box.active.select-box::before {
   top: 1.9rem;
   transform: rotate(-45deg);
   border-top: 2px solid $white;
@@ -154,6 +161,14 @@
   }
 }
 
-.active .langItem.active::before {
-  transform: rotate(-45deg);
+.select-box.active .select-box__selected {
+  background: rgba(61, 64, 80, 0.85);
+  border-radius: 3px 3px 0px 0px;
+  border: none;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+
+  &::placeholder {
+    color: $white;
+  }
 }
