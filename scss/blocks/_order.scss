@@ -146,13 +146,8 @@
         font-weight: 400;
 
         @include tabletLarge {
-          font-size: 1.3rem;
+          font-size: 1.4rem;
           line-height: 1.6rem;
-        }
-
-        @include mobileHuge {
-          font-size: 1rem;
-          height: 2rem;
         }
       }
     }

@@ -39,7 +39,8 @@
 
     @include mobileMedium {
       height: 4rem;
-      font-size: 1.4rem;
+      font-size: 1.6rem;
+      line-height: 2rem;
     }
 
     &::placeholder {
@@ -48,8 +49,8 @@
       color: $textPlaceholder;
 
       @include mobileMedium {
-        font-size: 1.2rem;
-        line-height: 1.4rem;
+        font-size: 1.6rem;
+        line-height: 2rem;
       }
     }
 
