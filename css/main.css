@@ -593,6 +593,11 @@ body {
     min-height: 13.4rem;
   }
 }
+@media screen and (max-width: 560px) {
+  .order__row-item {
+    flex: 0 1 11rem;
+  }
+}
 .order__row-item::after {
   content: "";
   position: absolute;

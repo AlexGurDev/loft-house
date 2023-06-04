@@ -2,7 +2,7 @@
   padding: 12.6rem 0 15rem;
   background: url("../img/order/bg-order.png");
   box-shadow: $shadowOrderSection;
-	background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center 0;
   min-height: 92rem;
@@ -80,6 +80,10 @@
         min-height: 13.4rem;
       }
 
+      @include mobileHuge {
+        flex: 0 1 11rem;
+      }
+
       &::after {
         content: "";
         position: absolute;
@@ -91,17 +95,9 @@
         background-repeat: repeat-x;
         background-size: contain;
 
-				@include desktopMidleLarge {
+        @include desktopMidleLarge {
           content: none;
         }
-
-        // @include tabletLarge {
-        //   top: 3.4rem;
-        // }
-
-        // @include mobileHuge {
-        //   content: none;
-        // }
       }
 
       &:last-child::after {
