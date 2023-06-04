@@ -54,21 +54,6 @@
       line-height: 1.6rem;
       min-height: 4rem;
     }
-
-    // &--open {
-    //   background: rgba(61, 64, 80, 0.85);
-    //   border-radius: 3px 3px 0px 0px;
-    //   border: none;
-    //   font-size: 1.8rem;
-    //   line-height: 2.2rem;
-    //   color: $white;
-
-    //   @include mobileMedium {
-    //     width: 28.3rem;
-    //     font-size: 1.2rem;
-    //     line-height: 1.6rem;
-    //   }
-    // }
   }
 
   &__list {
@@ -167,6 +152,7 @@
   border: none;
   font-size: 1.8rem;
   line-height: 2.2rem;
+  color: $white;
 
   &::placeholder {
     color: $white;
