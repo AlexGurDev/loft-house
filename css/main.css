@@ -802,8 +802,8 @@ body {
 }
 @media screen and (max-width: 560px) {
   .form__file-icon {
-    width: 1.4rem;
-    height: 1.7rem;
+    width: 1.5rem;
+    height: 1.8rem;
   }
 }
 .form__submit-button {
