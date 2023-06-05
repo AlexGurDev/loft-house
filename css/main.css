@@ -802,6 +802,7 @@ body {
 }
 @media screen and (max-width: 560px) {
   .form__file-icon {
+    margin-right: 0.3rem;
     width: 1.5rem;
     height: 1.8rem;
   }
