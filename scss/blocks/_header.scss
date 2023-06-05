@@ -22,7 +22,7 @@
 
     &--mobile {
       position: fixed;
-      padding: 4rem 0;
+      padding: 4rem 2rem;
       top: 0;
       left: 0;
       width: 100%;
@@ -40,18 +40,18 @@
       @include mobileHuge {
         padding: 2rem;
       }
-
-      .main-navigation {
-        display: block;
-      }
-
-      .main-navigation__list {
-        flex-direction: column;
-        align-items: center;
-        gap: 3rem;
-      }
     }
   }
+}
+
+.header__inner--mobile .main-navigation {
+  display: block;
+}
+
+.header__inner--mobile .main-navigation__list {
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
 }
 
 .header__inner--mobile .nav-btn {
