@@ -54,7 +54,7 @@
     }
   }
 
-  &__row {
+  &__features {
     margin-bottom: 8rem;
     display: flex;
     justify-content: center;
@@ -72,9 +72,6 @@
       padding: 0 1rem;
       flex: 0 1 21rem;
       min-height: 16.4rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
 
       @include tabletLarge {
         min-height: 13.4rem;
@@ -104,52 +101,52 @@
         content: none;
       }
 
-      &-ellipse {
-        margin-bottom: 2rem;
-        border-radius: 50%;
-        width: 10rem;
-        height: 10rem;
-        background: $backgroundLightBlue;
-        border: 0.5rem solid $backgroundorderIcon;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      // &-ellipse {
+      //   margin-bottom: 2rem;
+      //   border-radius: 50%;
+      //   width: 10rem;
+      //   height: 10rem;
+      //   background: $backgroundLightBlue;
+      //   border: 0.5rem solid $backgroundorderIcon;
+      //   display: flex;
+      //   align-items: center;
+      //   justify-content: center;
 
-        @include tabletLarge {
-          margin-bottom: 1rem;
-          width: 8rem;
-          height: 8rem;
-        }
+      //   @include tabletLarge {
+      //     margin-bottom: 1rem;
+      //     width: 8rem;
+      //     height: 8rem;
+      //   }
 
-        @include mobileHuge {
-          width: 6rem;
-          height: 6rem;
-        }
+      //   @include mobileHuge {
+      //     width: 6rem;
+      //     height: 6rem;
+      //   }
 
-        & > img {
-          @include tabletLarge {
-            width: 4rem;
-            height: 4rem;
-          }
+      //   & > img {
+      //     @include tabletLarge {
+      //       width: 4rem;
+      //       height: 4rem;
+      //     }
 
-          @include mobileHuge {
-            width: 3rem;
-            height: 3rem;
-          }
-        }
-      }
+      //     @include mobileHuge {
+      //       width: 3rem;
+      //       height: 3rem;
+      //     }
+      //   }
+      // }
 
-      &-description {
-        font-size: 1.6rem;
-        line-height: 1.9rem;
-        text-align: center;
-        font-weight: 400;
+      // &-description {
+      //   font-size: 1.6rem;
+      //   line-height: 1.9rem;
+      //   text-align: center;
+      //   font-weight: 400;
 
-        @include tabletLarge {
-          font-size: 1.4rem;
-          line-height: 1.6rem;
-        }
-      }
+      //   @include tabletLarge {
+      //     font-size: 1.4rem;
+      //     line-height: 1.6rem;
+      //   }
+      // }
     }
   }
 }

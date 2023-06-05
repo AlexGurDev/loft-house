@@ -4,13 +4,13 @@
   min-height: 8rem;
   background-color: $backgroundFooter;
 
-  &__row {
+  &__inner {
     display: grid;
     grid-template-columns: minmax(20rem, 34rem) minmax(20rem, 67rem) minmax(
         20rem,
         30.9rem
       );
-    gap: 8rem;
+    gap: 4.5rem;
 
     @include desktopMedium {
       grid-template-columns: repeat(2, 1fr);
@@ -23,11 +23,17 @@
     }
   }
 
-  &__rights {
+  &__copyright {
     position: relative;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     letter-spacing: 0.05rem;
+
+    &--uppercase {
+      padding: 0 0.3rem;
+      text-transform: uppercase;
+    }
 
     @include desktopMedium {
       font-size: 1rem;
@@ -53,140 +59,6 @@
 
       @include desktopMedium {
         content: none;
-      }
-    }
-  }
-
-  &__payments {
-    position: relative;
-
-    @include desktopMedium {
-      padding: 0 3rem;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: -0.2rem;
-      right: -3.9rem;
-      width: 0.1rem;
-      height: 1.8rem;
-      background: $textFooter;
-
-      @include desktopMedium {
-        content: none;
-      }
-    }
-
-    &-list {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 2rem 4rem;
-
-      @include desktopMedium {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
-      }
-
-      @include mobileHuge {
-        gap: 1rem;
-      }
-
-      &-item {
-        position: relative;
-        font-size: 1.3rem;
-        line-height: 1.6rem;
-        color: $textFooter;
-
-        @include mobileHuge {
-          font-size: 1.2rem;
-          line-height: 1.4rem;
-        }
-
-        &--wallet::before,
-        &--web-money::before,
-        &--yandex-money::before {
-          content: "";
-          position: absolute;
-          left: -3.3rem;
-          top: -0.2rem;
-          width: 2rem;
-          height: 2rem;
-          background-repeat: no-repeat;
-
-          @include mobileHuge {
-            left: -3rem;
-          }
-        }
-
-        &--wallet::before {
-          background-image: url("../img/footer/wallet.svg");
-        }
-
-        &--web-money::before {
-          background-image: url("../img/footer/web-money.svg");
-        }
-
-        &--yandex-money::before {
-          background-image: url("../img/footer/yandex-money.svg");
-        }
-      }
-    }
-  }
-
-  &__contacts {
-    &-list {
-      padding-left: 2.5rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 2rem 4rem;
-
-      @include desktopMedium {
-        padding: 0 3rem;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
-      }
-
-      &-item {
-        position: relative;
-
-        &-link {
-          font-weight: 400;
-          font-size: 1.3rem;
-          line-height: 1.6rem;
-          color: $white;
-          transition: color $durationNormal ease-in;
-          cursor: pointer;
-
-          &:hover {
-            color: $blue;
-          }
-
-          &--mail::before,
-          &--vk::before {
-            content: "";
-            position: absolute;
-            left: -3.3rem;
-            top: -0.3rem;
-            width: 2rem;
-            height: 2rem;
-            background-repeat: no-repeat;
-          }
-
-          &--mail::before {
-            background-image: url("../img/footer/mail.svg");
-          }
-
-          &--vk::before {
-            background-image: url("../img/footer/vk.svg");
-          }
-        }
       }
     }
   }

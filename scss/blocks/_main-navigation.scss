@@ -14,25 +14,23 @@
     align-items: center;
     gap: 1rem 6rem;
     flex-wrap: wrap;
+  }
 
-    &-item {
-      &-link {
-        font-weight: 600;
-        font-size: 1.3rem;
-        line-height: 1.6rem;
-        text-transform: uppercase;
-        color: $textColorLink;
-        transition: color $durationNormal ease-out;
+  &__link {
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    text-transform: uppercase;
+    color: $textColorLink;
+    transition: color $durationNormal ease-out;
 
-        &--active {
-          color: $textColorAccentActiveLink;
-        }
+    &--active {
+      color: $textColorAccentActiveLink;
+    }
 
-        &:hover {
-          color: $textColorAccentActiveLink;
-          cursor: pointer;
-        }
-      }
+    &:hover {
+      color: $textColorAccentActiveLink;
+      cursor: pointer;
     }
   }
 }

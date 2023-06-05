@@ -1,6 +1,6 @@
-const navBtn = document.querySelector('.nav-icon-btn');
-const navIcon = document.querySelector('.nav-icon');
-const nav = document.querySelector('.header__inner-wrapper');
+const navBtn = document.querySelector('.nav-btn');
+const navIcon = document.querySelector('.nav-btn__icon');
+const nav = document.querySelector('.header__inner');
 const selectBox = document.querySelector('.select-box');
 const options = document.querySelectorAll('.select-box__item');
 const selectedOption = document.querySelector('.select-box__selected');
@@ -30,8 +30,8 @@ slider.addEventListener('input', () => output.innerHTML = slider.value);
 
 // navigation button 
 navBtn.addEventListener('click', () => {
-	navIcon.classList.toggle('nav-icon--active');
-	nav.classList.toggle('header__inner-wrapper--mobile');
+	navIcon.classList.toggle('nav-btn__icon--active');
+	nav.classList.toggle('header__inner--mobile');
 });
 
 //main animation 

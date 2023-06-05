@@ -18,8 +18,8 @@
 
 <body>
 	<header class="header">
-		<div class="container">
-			<div class="header__inner-wrapper">
+		<div class="header__container container">
+			<div class="header__inner">
 				<div class="logo">
 					<a href="#" class="logo__link">
 						<span class="logo__text">LoremIpsum.</span>
@@ -29,71 +29,94 @@
 				<nav class="main-navigation">
 					<ul class="main-navigation__list">
 						<li class="main-navigation__list-item">
-							<a href="#" class="main-navigation__list-item-link main-navigation__list-item-link--active">Бизнес</a>
+							<a href="#" class="main-navigation__link main-navigation__link--active">Бизнес</a>
 						</li>
-						<li class="main-navigation__list-item"><a href="#" class="main-navigation__list-item-link">О нас</a></li>
-						<li class="main-navigation__list-item"><a href="#" class="main-navigation__list-item-link">Цены</a></li>
-						<li class="main-navigation__list-item"><a href="#" class="main-navigation__list-item-link">Оформить
-								заказ</a></li>
+						<li class="main-navigation__list-item"><a href="#" class="main-navigation__link">О нас</a></li>
+						<li class="main-navigation__list-item"><a href="#" class="main-navigation__link">Цены</a></li>
+						<li class="main-navigation__list-item"><a href="#" class="main-navigation__link">Оформить заказ</a></li>
 					</ul>
 				</nav>
-				<div class="header__nav-btn">
-					<div class="nav-icon-btn">
-						<div class="nav-icon"></div>
-					</div>
+				<div class="nav-btn">
+					<div class="nav-btn__icon"></div>
 				</div>
 			</div>
 		</div>
 	</header>
 	<main class="styles-container">
-		<section class="hero">
-			<div class="container">
-				<div class="hero__inner-wrapper">
-					<h1 class="hero__title" data-reveal="left"><span class="accent-title">Lorem ipsum</span>
-						dolor sit<br>
-						ametconsectetur<span class="accent-title">adipiscing</span></h1>
-					<div class="hero__content">
-						<h3 class="hero__content-subtitle" data-reveal="left">At vero eos et accusamus et iusto odio dignissimos
-							ducimus!</h3>
-						<ul class="hero__content-list" data-reveal="left">
-							<li class="hero__content-list-item">Totam rem aperiam eaque ipsa</li>
-							<li class="hero__content-list-item">Sit voluptatem accusantium doloremque laudantium</li>
-							<li class="hero__content-list-item">Sed ut perspiciatis, unde omnis iste natus error</li>
-						</ul>
-						<div class="hero__dialogs" data-reveal="left"><button
-								class="hero__dialogs-button button button--accent">заказать</button><button
-								class="hero__dialogs-button button">подробнее</button></div>
-					</div>
+		<section class="hero" style="background-image: url(./img/hero/hero-bg.png)">
+			<div class="hero__container container">
+				<h1 class="hero__title" data-reveal="left"><span class="hero__title--accent">Lorem ipsum</span>
+					dolor sit<br>ametconsectetur&nbsp<span class="hero__title--accent">adipiscing</span>&nbsp</h1>
+				<div class="hero__content">
+					<h3 class="hero__content-subtitle" data-reveal="left">At vero eos et accusamus et iusto odio dignissimos
+						ducimus!</h3>
+					<ul class="hero__content-list" data-reveal="left">
+						<li class="hero__content-list-item">Totam rem aperiam eaque ipsa</li>
+						<li class="hero__content-list-item">Sit voluptatem accusantium doloremque laudantium</li>
+						<li class="hero__content-list-item">Sed ut perspiciatis, unde omnis iste natus error</li>
+					</ul>
+					<div class="hero__buttons" data-reveal="left"><button class="button button--accent">заказать</button><button
+							class="button">подробнее</button></div>
 				</div>
 			</div>
 		</section>
-		<section class="order">
+		<section class="order" style="background-image: url(./img/order/bg-order.png)">
 			<div class="container">
 				<div class="order__content">
 					<h2 class="order__content-title">Оформление <span class="order__content-title--accent">Заказа</span></h2>
 					<p class="order__content-desciption">Перед заполнением формы ознакомьтесь с нашей схемой
 						работы!</p>
 				</div>
-				<ul class="order__row">
-					<li class="order__row-item">
-						<div class="order__row-item-ellipse"><img src="./img/order/search.svg" alt="search"></div>
-						<p class="order__row-item-description">Lorem ipsum dolor sit amet</p>
+				<ul class="order__features">
+					<li class="order__features-item">
+						<div class="feature">
+							<div class="feature__ellipse">
+								<div class="feature__ellipse-icon">
+									<img class="feature__ellipse-icon" src="./img/order/search.svg" alt="search">
+								</div>
+							</div>
+							<p class="feature__description">Lorem ipsum dolor sit amet</p>
+						</div>
 					</li>
-					<li class="order__row-item">
-						<div class="order__row-item-ellipse"><img src="./img/order/percent.svg" alt="percent"></div>
-						<p class="order__row-item-description">Сonsecteturadipiscing elit</p>
+					<li class="order__features-item">
+						<div class="feature">
+							<div class="feature__ellipse">
+								<div class="feature__ellipse-icon">
+									<img src="./img/order/percent.svg" alt="percent">
+								</div>
+							</div>
+							<p class="feature__description">Сonsecteturadipiscing elit</p>
+						</div>
 					</li>
-					<li class="order__row-item">
-						<div class="order__row-item-ellipse"><img src="./img/order/document.svg" alt="document"></div>
-						<p class="order__row-item-description">Sed do eiusmod tempor</p>
+					<li class="order__features-item">
+						<div class="feature">
+							<div class="feature__ellipse">
+								<div class="feature__ellipse-icon">
+									<img src="./img/order/document.svg" alt="document">
+								</div>
+							</div>
+							<p class="feature__description">Sed do eiusmod tempor</p>
+						</div>
 					</li>
-					<li class="order__row-item">
-						<div class="order__row-item-ellipse"><img src="./img/order/letter.svg" alt="letter"></div>
-						<p class="order__row-item-description">Esse cillum dolore eu fugiat</p>
+					<li class="order__features-item">
+						<div class="feature">
+							<div class="feature__ellipse">
+								<div class="feature__ellipse-icon">
+									<img src="./img/order/letter.svg" alt="letter">
+								</div>
+							</div>
+							<p class="feature__description">Esse cillum dolore eu fugiat</p>
+						</div>
 					</li>
-					<li class="order__row-item">
-						<div class="order__row-item-ellipse"><img src="./img/order/money.svg" alt="money"></div>
-						<p class="order__row-item-description">Excepteur sint occaecat cupidatat non proident</p>
+					<li class="order__features-item">
+						<div class="feature">
+							<div class="feature__ellipse">
+								<div>
+									<img src="./img/order/money.svg" alt="money">
+								</div>
+							</div>
+							<p class="feature__description">Excepteur sint occaecat cupidatat non proident</p>
+						</div>
 					</li>
 				</ul>
 				<form class="form" action="#" name="order-form">
@@ -123,14 +146,14 @@
 					<input class="form__input" type="text" name="name" id="input-text" placeholder="Ваше имя"
 						data-reg="^[А-ЯЁ][а-яё]*$">
 					<div class="range-slider">
-						<label class="range-slider__label" for="range">Sed ut perspiciatis, unde omnis istenatus</label>
+						<label class="range-slider__label" for="input-range">Sed ut perspiciatis, unde omnis istenatus</label>
 						<input type="range" id="input-range" name="range-slider" class="range-slider__input range" min="0"
 							max="100">
 						<div class="range-slider__output">
 							<span class="range-slider__output-number"></span><span class="range-slider__output-percent">%</span>
 						</div>
 					</div>
-					<label for="file-input" class="form__file form__file-text">
+					<label for="input-file" class="form__file form__file-text">
 						<input class="form__file-input" type="file" id="input-file" name="file">
 						<img class="form__file-icon" src="./img/order/file.svg" alt="file">
 						<span>Прикрепить файл</span>
@@ -141,24 +164,46 @@
 		</section>
 	</main>
 	<footer class="footer">
-		<div class="container">
-			<div class="footer__row">
-				<p class="footer__rights">&copy; 2018 «LoremIpsum.net» Все права защищены.</p>
-				<div class="footer__payments">
-					<ul class="footer__payments-list">
-						<li class="footer__payments-list-item footer__payments-list-item--wallet">QIWI wallet</li>
-						<li class="footer__payments-list-item footer__payments-list-item--yandex-money">Yandex Money</li>
-						<li class="footer__payments-list-item footer__payments-list-item--web-money">Web Money</li>
-					</ul>
-				</div>
-				<div class="footer__contacts">
-					<ul class="footer__contacts-list">
-						<li class="footer__contacts-list-item"><a href="mailto:info@ipsum228.com"
-								class="footer__contacts-list-item-link footer__contacts-list-item-link--mail">info@ipsum228.com</a></li>
-						<li class="footer__contacts-list-item"><a href="#"
-								class="footer__contacts-list-item-link footer__contacts-list-item-link--vk">Мы вконтакте</a></li>
-					</ul>
-				</div>
+		<div class="footer__container container">
+			<div class="footer__inner">
+				<p class="footer__copyright">&copy; 2018<span class="footer__copyright--uppercase">«LoremIpsum.net»</span>
+					Все права защищены.</p>
+				<ul class="payments-list">
+					<li class="payments-list__item">
+						<div class="payments-list__item-icon">
+							<img src="./img/footer/wallet.svg" alt="wallet">
+						</div>
+						<span class="payments-list__item-text">QIWI wallet</span>
+					</li>
+					<li class="payments-list__item">
+						<div class="payments-list__item-icon">
+							<img src="./img/footer/yandex-money.svg" alt="yandex-money">
+						</div>
+						<span class="payments-list__item-text">Yandex Money</span>
+					</li>
+					<li class="payments-list__item">
+						<div class="payments-list__item-icon">
+							<img src="./img/footer/web-money.svg" alt="web money">
+						</div>
+						<span class="payments-list__item-text">Web Money</span>
+					</li>
+				</ul>
+				<ul class="contacts-list">
+					<li class="contacts-list__item">
+						<a href="mailto:info@ipsum228.com" class="contacts-list__link">
+							<div class="contacts-list__link-icon">
+								<img src="./img/footer/mail.svg" alt="e-mail">
+							</div>
+							<span class="contacts-list__link-text">info@ipsum228.com</span>
+						</a></li>
+					<li class="contacts-list__item">
+						<a href="#" class="contacts-list__link">
+							<div class="contacts-list__link-icon">
+								<img src="./img/footer/vk.svg" alt="vk">
+							</div>
+							<span class="contacts-list__link-text">Мы вконтакте</span>
+						</a></li>
+				</ul>
 			</div>
 		</div>
 	</footer>

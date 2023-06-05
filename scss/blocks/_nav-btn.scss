@@ -1,11 +1,15 @@
-.nav-icon-btn {
+.nav-btn {
   height: 3rem;
   width: 4rem;
-  display: flex;
   justify-content: center;
   align-items: center;
   background: transparent;
-	cursor: pointer;
+  cursor: pointer;
+  display: none;
+
+  @include tabletLarge {
+    display: flex;
+  }
 
   @include mobileHuge {
     height: 2rem;
@@ -13,7 +17,7 @@
   }
 }
 
-.nav-icon {
+.nav-btn__icon {
   position: relative;
   width: 4rem;
   height: 0.1rem;
@@ -24,8 +28,8 @@
   }
 }
 
-.nav-icon::before,
-.nav-icon::after {
+.nav-btn__icon::before,
+.nav-btn__icon::after {
   content: "";
   display: block;
   position: absolute;
@@ -41,29 +45,35 @@
   }
 }
 
-.nav-icon::before {
+.nav-btn__icon::before {
   top: calc(0.1rem * -8);
 }
 
-.nav-icon::after {
+.nav-btn__icon::after {
   top: calc(0.1rem * 8);
 }
 
-.nav-icon.nav-icon--active {
+.nav-btn__icon.nav-btn__icon--active {
   background-color: transparent;
 }
 
-.nav-icon.nav-icon--active::before,
-.nav-icon.nav-icon--active::after {
+.nav-btn__icon.nav-btn__icon--active::before,
+.nav-btn__icon.nav-btn__icon--active::after {
   top: 0;
   transition: top $durationFast linear,
     transform $durationFast ease-in $durationFast;
 }
 
-.nav-icon.nav-icon--active::before {
+.nav-btn__icon.nav-btn__icon--active::before {
   transform: rotate(45deg);
 }
 
-.nav-icon.nav-icon--active::after {
+.nav-btn__icon.nav-btn__icon--active::after {
   transform: rotate(-45deg);
+}
+
+.nav-btn__icon.nav-btn__icon--active .nav-btn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
 }

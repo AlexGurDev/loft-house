@@ -1,6 +1,5 @@
 .hero {
   padding: 20.5rem 0 20rem;
-  background: url("../img/hero/hero-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 0;
@@ -20,6 +19,7 @@
     font-weight: 700;
     font-size: 4.8rem;
     line-height: 5.8rem;
+    max-width: 78rem;
     color: $textColorBlack;
     text-transform: uppercase;
 
@@ -27,11 +27,17 @@
       margin-bottom: 4rem;
       font-size: 3rem;
       line-height: 4rem;
+      max-width: 50rem;
     }
 
     @include mobileHuge {
       font-size: 2.2rem;
       line-height: 3rem;
+      max-width: 30rem;
+    }
+
+    &--accent {
+      color: $textColorAccent;
     }
   }
 
@@ -82,7 +88,7 @@
     }
   }
 
-  &__dialogs {
+  &__buttons {
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
