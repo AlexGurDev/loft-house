@@ -5,6 +5,7 @@
   background-color: $backgroundFooter;
 
   &__inner {
+    position: relative;
     display: grid;
     grid-template-columns: minmax(20rem, 34rem) minmax(20rem, 67rem) minmax(
         20rem,

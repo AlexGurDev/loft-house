@@ -44,20 +44,24 @@
   &__content {
     font-size: 2rem;
     line-height: 2.4rem;
+    max-width: 66rem;
     color: $dark;
 
     @include tabletLarge {
       font-size: 1.8rem;
       line-height: 2rem;
+      max-width: 40rem;
     }
 
     @include mobileHuge {
       font-size: 1.4rem;
       line-height: 1.8rem;
+      max-width: 30rem;
     }
 
     &-subtitle {
       margin-bottom: 1rem;
+      font-size: 2rem;
       font-weight: 700;
     }
 
@@ -79,7 +83,7 @@
           content: "-";
           position: absolute;
           top: 50%;
-          left: -20px;
+          left: -2rem;
           font-size: 2rem;
           background-repeat: no-repeat;
           transform: translate(50%, -60%);
