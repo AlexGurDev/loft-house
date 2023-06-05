@@ -335,7 +335,6 @@ body {
   text-transform: uppercase;
 }
 .logo__text--accent {
-  margin-left: -0.4rem;
   color: #42a9ed;
 }
 @media screen and (max-width: 560px) {
