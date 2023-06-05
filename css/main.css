@@ -1217,6 +1217,8 @@ body {
   line-height: 1.6rem;
   color: #ffffff;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   gap: 1rem;
   transition: color 240ms ease-in;
   cursor: pointer;
