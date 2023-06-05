@@ -1132,8 +1132,8 @@ body {
 }
 @media screen and (max-width: 560px) {
   .footer__copyright {
-    font-size: 0.8rem;
-    line-height: 1rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
     grid-column: inherit;
   }
 }
@@ -1152,40 +1152,10 @@ body {
   }
 }
 
-.payments-list {
+.payments {
   position: relative;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 2rem 4rem;
 }
-@media screen and (max-width: 1024px) {
-  .payments-list {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-  }
-}
-.payments-list__item {
-  font-size: 1.3rem;
-  line-height: 1.6rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #c3c3c3;
-}
-@media screen and (max-width: 560px) {
-  .payments-list__item {
-    font-size: 1.2rem;
-    line-height: 1.4rem;
-  }
-}
-.payments-list__item-icon {
-  margin-right: 1rem;
-  width: 2rem;
-  height: 2rem;
-}
-.payments-list::after {
+.payments::after {
   content: "";
   position: absolute;
   top: -0.2rem;
@@ -1195,12 +1165,44 @@ body {
   background: #c3c3c3;
 }
 @media screen and (max-width: 1024px) {
-  .payments-list::after {
+  .payments::after {
     content: none;
   }
 }
+.payments__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem 4rem;
+}
+@media screen and (max-width: 1024px) {
+  .payments__list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+.payments__list-item {
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #c3c3c3;
+}
+@media screen and (max-width: 560px) {
+  .payments__list-item {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+}
+.payments__icon {
+  margin-right: 1rem;
+  width: 2rem;
+  height: 2rem;
+}
 
-.contacts-list {
+.contacts__list {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1208,14 +1210,14 @@ body {
   gap: 2rem;
 }
 @media screen and (max-width: 1024px) {
-  .contacts-list {
+  .contacts__list {
     flex-direction: column;
     align-items: flex-start;
     justify-content: start;
     gap: 1rem;
   }
 }
-.contacts-list__link {
+.contacts__link {
   font-weight: 400;
   font-size: 1.3rem;
   line-height: 1.6rem;
@@ -1227,10 +1229,10 @@ body {
   transition: color 240ms ease-in;
   cursor: pointer;
 }
-.contacts-list__link:hover {
+.contacts__link:hover {
   color: #42a9ed;
 }
-.contacts-list__link-icon {
+.contacts__link-icon {
   width: 2rem;
   height: 2rem;
 }/*# sourceMappingURL=main.css.map */
