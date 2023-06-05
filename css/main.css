@@ -216,7 +216,7 @@ body {
 }
 @media screen and (max-width: 560px) {
   .header__inner--mobile {
-    padding: 2rem 0;
+    padding: 2rem;
   }
 }
 .header__inner--mobile .main-navigation {
@@ -227,17 +227,22 @@ body {
   align-items: center;
   gap: 3rem;
 }
-.header .header__inner--mobile .nav-btn {
+
+.header__inner--mobile .nav-btn {
   position: fixed;
   top: 3.6rem;
   right: 1.5rem;
   cursor: pointer;
 }
 @media screen and (max-width: 560px) {
-  .header .header__inner--mobile .nav-btn {
+  .header__inner--mobile .nav-btn {
     top: 2.5rem;
     right: 1.1rem;
   }
+}
+
+.header__inner--mobile .logo {
+  align-self: flex-start;
 }
 
 .nav-btn {
@@ -260,7 +265,6 @@ body {
     width: 3rem;
   }
 }
-
 .nav-btn__icon {
   position: relative;
   width: 4rem;
@@ -272,9 +276,7 @@ body {
     width: 3rem;
   }
 }
-
-.nav-btn__icon::before,
-.nav-btn__icon::after {
+.nav-btn__icon::before, .nav-btn__icon::after {
   content: "";
   display: block;
   position: absolute;
@@ -285,16 +287,13 @@ body {
   transition: transform 120ms ease-in, top 120ms linear 120ms;
 }
 @media screen and (max-width: 560px) {
-  .nav-btn__icon::before,
-  .nav-btn__icon::after {
+  .nav-btn__icon::before, .nav-btn__icon::after {
     width: 3rem;
   }
 }
-
 .nav-btn__icon::before {
   top: -0.8rem;
 }
-
 .nav-btn__icon::after {
   top: 0.8rem;
 }
@@ -448,6 +447,12 @@ body {
   margin-bottom: 1rem;
   font-size: 2rem;
   font-weight: 700;
+}
+@media screen and (max-width: 560px) {
+  .hero__content-subtitle {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+  }
 }
 .hero__content-list {
   padding-left: 2.5rem;

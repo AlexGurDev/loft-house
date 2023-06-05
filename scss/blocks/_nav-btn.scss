@@ -15,42 +15,42 @@
     height: 2rem;
     width: 3rem;
   }
-}
 
-.nav-btn__icon {
-  position: relative;
-  width: 4rem;
-  height: 0.1rem;
-  background-color: $white;
+  &__icon {
+    position: relative;
+    width: 4rem;
+    height: 0.1rem;
+    background-color: $white;
 
-  @include mobileHuge {
-    width: 3rem;
+    @include mobileHuge {
+      width: 3rem;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      width: 4rem;
+      height: 0.1rem;
+      background-color: $white;
+      transition: transform $durationFast ease-in,
+        top $durationFast linear $durationFast;
+
+      @include mobileHuge {
+        width: 3rem;
+      }
+    }
+
+    &::before {
+      top: calc(0.1rem * -8);
+    }
+
+    &::after {
+      top: calc(0.1rem * 8);
+    }
   }
-}
-
-.nav-btn__icon::before,
-.nav-btn__icon::after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  width: 4rem;
-  height: 0.1rem;
-  background-color: $white;
-  transition: transform $durationFast ease-in,
-    top $durationFast linear $durationFast;
-
-  @include mobileHuge {
-    width: 3rem;
-  }
-}
-
-.nav-btn__icon::before {
-  top: calc(0.1rem * -8);
-}
-
-.nav-btn__icon::after {
-  top: calc(0.1rem * 8);
 }
 
 .nav-btn__icon.nav-btn__icon--active {

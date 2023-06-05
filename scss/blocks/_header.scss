@@ -38,7 +38,7 @@
       z-index: 1000;
 
       @include mobileHuge {
-        padding: 2rem 0;
+        padding: 2rem;
       }
 
       .main-navigation {
@@ -52,16 +52,20 @@
       }
     }
   }
+}
 
-  .header__inner--mobile .nav-btn {
-    position: fixed;
-    top: 3.6rem;
-    right: 1.5rem;
-    cursor: pointer;
+.header__inner--mobile .nav-btn {
+  position: fixed;
+  top: 3.6rem;
+  right: 1.5rem;
+  cursor: pointer;
 
-    @include mobileHuge {
-      top: 2.5rem;
-      right: 1.1rem;
-    }
+  @include mobileHuge {
+    top: 2.5rem;
+    right: 1.1rem;
   }
+}
+
+.header__inner--mobile .logo {
+  align-self: flex-start;
 }
